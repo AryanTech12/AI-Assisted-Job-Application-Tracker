@@ -92,7 +92,7 @@ const ApplicationModal: React.FC<ParserModalProps> = ({ onClose, application }) 
         <div className="flex flex-col md:flex-row flex-1 overflow-hidden">
            {/* Left Column */}
            <div className="w-full md:w-1/2 p-6 border-r border-gray-100 dark:border-slate-700 overflow-y-auto custom-scrollbar">
-              {!application && jdText === '' && formData.company === '' && (
+              {!application && formData.company === '' && (
                  <div className="space-y-4">
                     <label className="block text-sm font-semibold text-gray-700 dark:text-slate-300">
                        Paste Job Description to Auto-Fill
