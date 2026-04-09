@@ -121,6 +121,11 @@ const ApplicationModal: React.FC<ParserModalProps> = ({ onClose, application }) 
                           </>
                        )}
                     </button>
+                    {parseMutation.isError && (
+                       <p className="text-red-500 text-sm mt-4 text-center bg-red-50 dark:bg-red-900/20 dark:text-red-400 border border-red-200 dark:border-red-800/50 p-3 rounded-xl font-medium">
+                          {(parseMutation.error as any)?.response?.data?.message || 'Failed to parse Job Description. Check your API key limit.'}
+                       </p>
+                    )}
                  </div>
               )}
 
