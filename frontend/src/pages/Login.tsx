@@ -19,7 +19,7 @@ const Login = () => {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+      const res = await axios.post('https://ai-assisted-job-application-tracker-6ugy.onrender.com/api/auth/login', { email, password });
       localStorage.setItem('jobTrackerUser', JSON.stringify(res.data));
       navigate('/dashboard');
     } catch (err: any) {

@@ -20,7 +20,7 @@ const Register = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', { email, password });
+      const res = await axios.post('https://ai-assisted-job-application-tracker-6ugy.onrender.com/api/auth/register', { email, password });
       localStorage.setItem('jobTrackerUser', JSON.stringify(res.data));
       navigate('/dashboard');
     } catch (err: any) {
