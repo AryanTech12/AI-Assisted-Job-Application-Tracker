@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://ai-assisted-job-application-tracker-6ugy.onrender.com/api',
 });
 
 api.interceptors.request.use((config) => {
