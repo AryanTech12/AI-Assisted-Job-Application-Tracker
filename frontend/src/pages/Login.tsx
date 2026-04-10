@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
-import { Sparkles, MonitorSmartphone } from 'lucide-react';
+import { MonitorSmartphone } from 'lucide-react';
 
 const Login = () => {
   const [email, setEmail] = useState('');
